@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Behavior
+comment0.text=\r\n\ This\ Behavior\ class\ complicates\ characters\ by\ giving\ them\ different\ styles\ of\ engagement\ and\ allowing\ them\ to\ be\r\n\ in\ a\ downed\ state\ either\ by\ the\ elminiation\ of\ the\ character\ or\ disarming\ them\ by\ wounding\ their\ arms\r\n\r\n\ @author\ Ronnie\ Cole\r\n\ @version\ 5/10/2020\r\n
+comment1.params=
+comment1.target=Behavior()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Behavior\r\n
+numComments=2

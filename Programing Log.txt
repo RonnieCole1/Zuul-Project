@@ -1,0 +1,153 @@
+Project 3 Description:
+
+Board a space ship. Fight some guards. Take a repair tool and use it on the ship's engines (to repair them). Go to bridge.
+
+		Here are the following commands:
+
+Take - allows you to pick up a grabable item that isn't too heavy.
+Inspect - shows you what items you have in your inventory.
+Drop - drops an item from your inventory and adds it to the room.
+Look - gives a description of the room you are in.
+Quit - quits the game.
+Go - allows you to move to a room so long as there is a door.
+Use - allows the player to use special functions that are given to a usable item.
+Inspectitem - reads description from item your either carrying or in your room.
+Back - sends you back to the previous room.
+
+Unfortunately, I can't get roomList to not break the game, and some methods require it to work. I also didn't have time to get
+the other characters to fire back. Assuming roomList works, here is the list of commands that need to be done in order to win:
+
+1.  take Rifle
+2.  take HackingTool
+3.  go north
+4.  use HackingTool
+5.  go north
+6.  go north
+7.  use Rifle
+8.  take keycard
+9.  go west
+10. use Rifle
+11. take RepairTool
+12. use RepairTool
+13. go east
+14. use keycard
+15. go east
+16. go east
+              
+////////////////////////////////////////////////////
+             
+             Teleporter  Bathroom
+                 ||         ||
+Engineering == Cargo == Habitation == Bridge
+                 ||
+               Airlock
+                 ||
+               Space
+                 ||
+                Ship
+
+////////////////////////////////////////////////////
+
+-Programming Log-
+
+4/6/2020-
+
+*Spent time brainstorming and coming up with ideas - 1 hour
+*Created map and set win conditions - 10 minutes
+
+4/7/2020-
+
+*Watched D-level videos - 20-30 minutes
+*Edited Game class - <1 hour
+	*Edited createRooms() - <10 minutes
+	*Edited printWelcome() - 20 minutes
+	*Edited printHelp() - <5 minutes
+	*Edited class header - <10 minutes
+	*Edited method header - <5 minutes
+
+4/8/2020-
+
+*Created programing log - 15 minutes
+
+4/11/2020-
+
+*Wrote down a list of items - 15 minutes
+
+4/12/2020-
+
+*Created item class - 15 minutes
+*Edited process commands - 5 minutes
+*Started command methods - 10 minutes
+*Created all items and added them to their rooms- 40 minutes
+
+4/13/2020-
+
+*Created inventory - 10 minutes
+	*Finished findIventoryItem method - 4 minutes
+	*Finished removeInventoryItems method - 1 minute
+	*Finished addInventoryItem method - 1 minute
+	*Finished getItemList - 4 minutes
+*Finished various c level modifications to Room class - 40 minutes
+*Finished c level commands in Game class - 1 hour.
+	*Finished goTake
+	*Finished goDrop
+	*Finished goLook
+	*Finished goInspect
+
+5/3/2020-
+
+*Fixed inspect and look - 20 minutes
+*Fixed getItemList method - 10 minutes
+*Made inventory and roomlist easier to read - 5 minutes
+*Fixed inventory - 2 minutes
+*Changed toString() to getName() - 2 minutes
+*Fixed item names - 1 minute
+*Playtested - 5 minutes
+*Created method which gives some item description when the item is picked up - 4 minutes.
+*Added main method - 15 minutes
+
+5/4/2020-
+
+*Improved readibility of createRoomsAndItems() - 5 minutes
+*Added back method - 15 minutes
+*Created character class - 5 minutes
+*Added methods to character class which represent limbs, torso, and head - 30 minutes
+*Added addCharacter method in Room class - 7 minutes
+*Improved inspect command - 5 minutes
+*Added usability methods to items - 10 minutes
+*Created the inspect item method - 20 minutes
+*Created the foundation of the Use method - 2 minutes
+
+5/5/2020-
+*Improved Use command to check for secondword - 20 minutes
+*created charaters with health in their respective rooms- 20 minutes
+*created Behavior class - 2 minutes
+
+5/6/2020-
+Created useRifle, useStunGun, useRepairTool, and useHackingTool methods -10 minutes
+Created findCharacter method - 10 minutes
+Created getName in character class - 4 minutes
+Created checkRoomForCharacer method - 5 minutes
+Finished rifle and Character checks on useRilfe - 10 mintes
+Finished stungun and character checks on useStungun - 1 minute
+Finished UseRepairTool - 10 minutes
+Finished useRilfe - 1 hour
+
+5/8/2020-
+Created downedState method - 5 minutes
+Playtest and fix useRifle - 1 hour
+Create removeCharacter method - 1 minute
+Create roomList arraylist - 2 minutes
+Add rooms to roomlist- 5 minutes
+Created teleporter room - 5 minutes
+Created methods related to locked room - 10 minutes
+created usekeycard and finished both usekeycard and userepairtool - 20 minutes
+
+5/10/2020
+Playtested - <1 minute
+Tried to fix roomList - 1.5 hours
+Added @param and @return to methods - 40 minutes
+Added lock methods - 10 minutes
+Tried to fix roomList again - 2 hours
+Added item descriptions - 20 minutes
+Tried to fix roomList again - 1 hour.
